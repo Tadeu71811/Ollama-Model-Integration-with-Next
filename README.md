@@ -27,7 +27,7 @@ const modelRegistry = {
   summarize: 'mistral',
   analyze: 'phi4',
   quick: 'phi3',
-  visual: 'minicpm-v',
+  visual: 'llava:7b-v1.6',
 };
 Getting Started
 Prerequisites
