@@ -10,7 +10,7 @@ const modelRegistry = {
   summarize: 'mistral',   // Summarization and concise text generation
   analyze: 'phi4',        // Complex reasoning and advanced analysis
   quick: 'phi3',          // Lightweight, quick-response tasks
-  visual: 'minicpm-v',    // Visual-related or lightweight tasks
+  visual: 'llava:7b-v1.6',    // Visual-related or lightweight tasks
 };
 
 export default async function handler(req, res) {
@@ -67,7 +67,7 @@ export default async function handler(req, res) {
     }
 
     if (task === 'visual') {
-      // Send visual-related task to MiniCPM-V
+      // Send visual-related task to llava:7b-v1.6
       const response = await axios.post('http://localhost:11434/api/generate', {
         model: selectedModel,
         prompt: `Create a visual representation or analyze this visually: ${prompt}`,
