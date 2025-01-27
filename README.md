@@ -8,7 +8,7 @@ Chat: Conversational responses (llama3.2).
 Summarization: Concise text generation (mistral).
 Analysis: Complex reasoning (phi4).
 Quick Responses: Lightweight tasks (phi3).
-Visual Concepts: Visual-related tasks (minicpm-v).
+Visual Concepts: Visual-related tasks (llava:7b-v1.6).
 Conversation context management for chat tasks.
 Comprehensive error handling for unsupported tasks and invalid inputs.
 Project Structure
